@@ -1,0 +1,203 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+body {
+  margin-bottom: 50px;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(100,100,100,0.3);
+  cursor: pointer;
+}
+
+/* Navbar Header */
+.navhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+.logo {
+  width: 60px;
+  height: 55px;
+}
+.navbar {
+  border-bottom: solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+li {
+  margin-left: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  /* border: solid 1px; */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+li:hover {
+  animation: nav-anim 1s forwards ;
+}
+
+@keyframes nav-anim {
+  100% {
+    background-color: rgba(200,200,200,0.7);
+  }
+}
+
+
+/* Home Page */
+.home {
+  text-align: center;
+  cursor: default;
+}
+.home::before {
+  content: '';
+  background-image: url('./icons/tower.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: fixed;
+  top: 380px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.home-desc {
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+.home-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+  padding: 15px;
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+/* Contact Page */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contactForm::before {
+  content: '';
+  background-image: url('./icons/knight.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: fixed;
+  top: 380px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.contactForm label, button{
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+
+
+/* Products */
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 100px;
+}
+.products::before {
+  content: '';
+  background-image: url('./icons/helmet.png');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: fixed;
+  top: 330px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar input {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product-table {
+  margin: 0 50px;
+}
+
+.product-table th {
+  border-bottom: solid 1px;
+  border-left: solid;
+  padding-bottom: 5px;
+  background: rgba(200,200,200,0.5);
+}
+.product-table td {
+  border: solid 1px;
+  padding: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(200,200,200,0.9);
+}
+
+.footer-links a img {
+  width: auto;
+  height: 35px;
+}
