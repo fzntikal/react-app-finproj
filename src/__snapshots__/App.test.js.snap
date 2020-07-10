@@ -1,109 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`change language 1`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+exports[`change theme 1`] = `
+Array [
+  <div
+    className="navbar"
   >
+    <h1
+      className="navhead"
+    >
+      AshenShop
+    </h1>
     <img
       alt="logo"
-      className="App-logo"
-      src="logo.svg"
+      className="logo"
+      src="https://i.pinimg.com/originals/ed/1c/6e/ed1c6ec431f5f0a6edfb108aab61b97f.png"
     />
-    <p>
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload.
-    </p>
-    <button
-      onClick={[Function]}
-    >
-      Click me!
-    </button>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
-  </header>
-</div>
-`;
-
-exports[`change language 2`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+    <ul>
+      <li>
+        <a
+          className="nav-link"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav-link"
+          href="/contactUs"
+          onClick={[Function]}
+        >
+          Contact Us
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav-link"
+          href="/products"
+          onClick={[Function]}
+        >
+          Products
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav-link"
+          href="/extras"
+          onClick={[Function]}
+        >
+          EXTRA
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="home"
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
+    <h2>
+      Welcome to this page, Sire!
+    </h2>
+    <h3>
+      <em>
+        "Praise the sun!"
+      </em>
+       -Solaire of Astora
+    </h3>
     <p>
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload.
+      Do you like medieval stuffs? We got it! Enjoy your time here with us! 
+      <br />
+      We provide the best weapons, armors, and other medieval stuff, feel free to request for new items.
     </p>
-    <button
-      onClick={[Function]}
+    <div
+      className="home-desc"
     >
-      Click me!
-    </button>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Belajar React
-    </a>
-  </header>
-</div>
-`;
-
-exports[`change language 3`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+      <h2>
+        The stuff currently in our possession:
+      </h2>
+      <ul
+        className="home-detail"
+      >
+        <li>
+          Sword
+          :
+          <br />
+          A melee weapon that are used mainly for side-arms, nobility often decorate their personal swords to fit their noble status
+        </li>
+        <li>
+          Spear
+          :
+          <br />
+          Long-range melee weapon, perfect to use against cavalry and to hold enemy back. Majority of low ranked foot soldiers are wielding this weapon.
+        </li>
+        <li>
+          Shield
+          :
+          <br />
+          A defensive tools made to protect its wielder.
+        </li>
+        <li>
+          Armor
+          :
+          <br />
+          Basically the things medieval knight wears. Plates, leathers, chainmails, you name it! All made to protect their body.
+        </li>
+      </ul>
+      <h2>
+        And many more medieval stuff!
+      </h2>
+      <div>
+        <p>
+          Click these buttons below to see illustration of the medieval stuff!
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Sword
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Spear
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Shield
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Armor
+        </button>
+        <p>
+          
+        </p>
+      </div>
+       
+    </div>
+  </div>,
+  <footer
+    className="footer"
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
+    <div
+      className="footer-links"
+    >
+      <a
+        href="https://www.facebook.com/felzanova"
+      >
+        <img
+          alt="fb-icon"
+          src="fb-icon.png"
+        />
+      </a>
+      <a
+        href="https://twitter.com/tiikall"
+      >
+        <img
+          alt="tw-icon"
+          src="tw-icon.png"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/ashencowl/"
+      >
+        <img
+          alt="ig-icon"
+          src="ig-icon.png"
+        />
+      </a>
+    </div>
     <p>
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload.
+      Site made by Fauzan Tikal for study purposes.
     </p>
-    <button
-      onClick={[Function]}
-    >
-      Click me!
-    </button>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
-  </header>
-</div>
+  </footer>,
+]
 `;

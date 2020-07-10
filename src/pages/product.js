@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Halaman Products berisikan produk yang ada beserta harga dan stock.
+
 const PRODUCTS = [
     {category: 'Sword', price: 'Rp 55000', stocked: true, name: 'Bastard Sword'},
     {category: 'Sword', price: 'Rp 65000', stocked: true, name: 'Estoc'},

@@ -1,5 +1,7 @@
 import React from 'react';
 
+//berisikan sebuah List yang mendeskripsikan sesuatu.
+
 export default class Details extends React.Component {
     render() {
         const { items } = this.props;

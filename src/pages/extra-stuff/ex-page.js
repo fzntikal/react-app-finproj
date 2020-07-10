@@ -1,6 +1,12 @@
 import React, {useContext} from 'react';
 import { ExtraContext } from './ex-context';
 
+/**
+ * Page yang memiliki tombol untuk mengganti tema latar dari page ini
+ * 
+ * menggunakan Context.
+ */
+
 export default function ExPage() {
     const {theme, changeTheme} = useContext(ExtraContext);
 

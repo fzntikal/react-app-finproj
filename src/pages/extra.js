@@ -2,6 +2,8 @@ import React from 'react';
 import {ExtraContext} from './extra-stuff/ex-context';
 import ExComp from './extra-stuff/ex-comp';
 
+//halaman 'EXTRA' yang berisikan sebuah tombol yang dapat mengganti warna latar
+
 export default class Extras extends React.Component {
     constructor() {
         super();

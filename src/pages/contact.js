@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Halaman Contact Us yang berisikan berbagai form.
+
 export default class Contact extends React.Component {
     constructor() {
         super();

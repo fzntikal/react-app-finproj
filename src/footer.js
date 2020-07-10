@@ -3,6 +3,8 @@ import fbIcon from './icons/fb-icon.png';
 import twIcon from './icons/tw-icon.png';
 import igIcon from './icons/ig-icon.png';
 
+// Bagian footer website menyimpan berbagai informasi tambahan seperti media sosial dan copyrights.
+
 export default function Footer() {
     return(
         <footer className='footer'>

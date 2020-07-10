@@ -10,6 +10,8 @@ import Contact from './pages/contact';
 import FilterableProductTable from './pages/product';
 import Extras from './pages/extra';
 
+// menampilkan keseluruhan navigasi pada page.
+
 export default function Nav() {
     return(
         <Router>
@@ -18,14 +20,17 @@ export default function Nav() {
                     AshenShop
                 </h1>
                 <img className='logo' src='https://i.pinimg.com/originals/ed/1c/6e/ed1c6ec431f5f0a6edfb108aab61b97f.png' alt='logo'></img>
+
+                {/* Tombol navigasi untuk berpindah halaman web */}
                 <ul>
-                    <li><Link to='/' className='nav-link'>Home</Link></li>
+                    <li><Link to='/' className='nav-link'>Home</Link></li> 
                     <li><Link to='/contactUs' className='nav-link'>Contact Us</Link></li>
                     <li><Link to='/products' className='nav-link'>Products</Link></li>
                     <li><Link to='/extras' className='nav-link'>EXTRA</Link></li>
                 </ul>
             </div>
 
+            {/* Switch mengatur route yang ada dalam setiap navigasinya */}
             <Switch>
                 <Route exact path='/'>
                     <Home />

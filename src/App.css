@@ -275,3 +275,42 @@ li:hover {
   width: auto;
   height: 25px;
 }
+
+@media (max-width:800px) {
+  body {
+    font-size: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    width: 50px;
+    height: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  body{
+    font-size: 70%;
+  }
+  .footer {
+    font-size: 70%;
+  }
+  button {
+    font-size: 80%;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar {
+    height: 80px;
+  }
+  .extras {
+    height: 100%;
+  }
+  #stars {
+    top: 20px;
+  }
+}
