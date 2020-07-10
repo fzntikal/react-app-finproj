@@ -8,9 +8,7 @@
   background: black;
 }
 
-body {
-  margin-bottom: 50px;
-}
+
 
 button {
   border: none;
@@ -78,6 +76,7 @@ li:hover {
 .home {
   text-align: center;
   cursor: default;
+  padding-bottom: 50px;
 }
 .home::before {
   content: '';
@@ -86,7 +85,7 @@ li:hover {
   background-repeat: no-repeat;
   z-index: -1;
   position: fixed;
-  top: 380px;
+  top: 60%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -100,7 +99,7 @@ li:hover {
 .home-detail {
   display: flex;
   flex-direction: column;
-  margin: 20px 100px;
+  margin: 20px 50px;
   padding: 15px;
   border: solid 2px;
   border-radius: 10px;
@@ -113,7 +112,13 @@ li:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 50px;
 }
+.contactForm #name, #email, textarea {
+  text-align: center;
+  width: 250px;
+}
+
 .contactForm::before {
   content: '';
   background-image: url('./icons/knight.png');
@@ -121,7 +126,7 @@ li:hover {
   background-repeat: no-repeat;
   z-index: -1;
   position: fixed;
-  top: 380px;
+  top: 60%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -142,15 +147,16 @@ li:hover {
   justify-content: center;
   text-align: center;
   margin: 0 100px;
+  padding-bottom: 50px;
 }
 .products::before {
   content: '';
   background-image: url('./icons/helmet.png');
-  background-size: 180px;
+  background-size: 145px;
   background-repeat: no-repeat;
   z-index: -1;
   position: fixed;
-  top: 330px;
+  top: 60%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -184,6 +190,72 @@ li:hover {
 }
 
 
+/* Extras */
+.extras {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#stars {
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ex-star1 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 2s infinite;
+}
+.ex-star2 {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 4s infinite;
+}
+.ex-star3 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s infinite;
+}
+.ex-star4 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 2.3s infinite;
+}
+@keyframes twinkle {
+  0% {
+    top: 150px;
+    opacity: 0;
+  }
+  50% {
+    top: 300px;
+    opacity: 1;
+  }
+  100% {
+    top: 150px;
+    opacity: 0;
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -193,11 +265,13 @@ li:hover {
   align-items: center;
   position: fixed;
   width: 100%;
+  height: 40px;
   bottom: 0;
   background-color: rgba(200,200,200,0.9);
+  font-size: 14px;
 }
 
 .footer-links a img {
   width: auto;
-  height: 35px;
+  height: 25px;
 }

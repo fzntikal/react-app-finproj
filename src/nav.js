@@ -8,19 +8,21 @@ import {
 import Home from './pages/home';
 import Contact from './pages/contact';
 import FilterableProductTable from './pages/product';
+import Extras from './pages/extra';
 
 export default function Nav() {
     return(
         <Router>
             <div className='navbar'>
                 <h1 className='navhead'>
-                    T-Workshop
+                    AshenShop
                 </h1>
                 <img className='logo' src='https://i.pinimg.com/originals/ed/1c/6e/ed1c6ec431f5f0a6edfb108aab61b97f.png' alt='logo'></img>
                 <ul>
                     <li><Link to='/' className='nav-link'>Home</Link></li>
                     <li><Link to='/contactUs' className='nav-link'>Contact Us</Link></li>
                     <li><Link to='/products' className='nav-link'>Products</Link></li>
+                    <li><Link to='/extras' className='nav-link'>EXTRA</Link></li>
                 </ul>
             </div>
 
@@ -33,6 +35,9 @@ export default function Nav() {
                 </Route>
                 <Route path='/products'>
                     <FilterableProductTable />
+                </Route>
+                <Route path='/extras'>
+                    <Extras />
                 </Route>
             </Switch>
         </Router>

@@ -39,15 +39,15 @@ export default class Contact extends React.Component {
                     <p>It's not much for now, but feel free to express yourself to us by filling these forms, have a good day! To purchase, please fill the "Message" with the item(s) you wish to buy.</p>
                     <label>
                         Name: <br/>
-                        <input id='name' name='name' type='text' value={name} onChange={this.onChange} />
+                        <input id='name' name='name' type='text' placeholder='your name...' value={name} onChange={this.onChange} />
                     </label>
                     <label>
                         Email: <br/>
-                        <input id='email' name='email' type='email' value={email} onChange={this.onChange} />
+                        <input id='email' name='email' type='email' placeholder='aaabbb123@gmail.com' value={email} onChange={this.onChange} />
                     </label>
                     <label>
                         Message: <br/>
-                        <textarea id='message' name='message' value={message} onChange={this.onChange} />
+                        <textarea id='message' name='message' placeholder="What's on your mind?" value={message} onChange={this.onChange} />
                     </label>
                     <label>
                         Do you want to receive weekly news from us?

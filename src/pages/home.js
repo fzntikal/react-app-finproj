@@ -43,10 +43,10 @@ export default function Home() {
     return(
         <div className='home'>
             <h2>
-                This is Home Page.
+                Welcome to this page, Sire!
             </h2>
             <h3>
-                Welcome to this page, Sire!
+                <em>"Praise the sun!"</em> -Solaire of Astora
             </h3>
             <p>
                 Do you like medieval stuffs? We got it!
